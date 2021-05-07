@@ -1,0 +1,4 @@
+package streamServer
+
+func GetVideo()  {
+}
