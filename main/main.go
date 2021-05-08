@@ -105,7 +105,7 @@ func main()  {
 	})
 
 
-	r.Run(":80") // listen and serve on 0.0.0.0:8080 (for windowsConst "localhost:8080")
+	r.Run() // listen and serve on 0.0.0.0:8080 (for windowsConst "localhost:8080")
 }
 
 //开启一个http服务，监听":7890"，返回运行信息
