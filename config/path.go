@@ -8,7 +8,7 @@ var (
 	HTML_DIR string
 	FACE_IMAGE_DIR string
 	ASSETS_DIR string
-	HOST = "http://localhost:8080"
+	HOST = "http://121.5.72.78:8080"
 )
 
 func InitConfig()  {
@@ -16,6 +16,7 @@ func InitConfig()  {
 	goos := runtime.GOOS
 	if goos == "windows" {
 		basePath = "E:/videoProject/server/"
+		HOST = "http://localhost:8080"
 	}
 	 LOG_DIR = basePath + "logs/"
 	 VIDEO_DIR = basePath + "videos/"
