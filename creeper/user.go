@@ -4,7 +4,7 @@ import (
 	"errors"
 	"io/ioutil"
 	"os"
-	"yx.com/videos/ServerConst"
+	"yx.com/videos/config"
 	"yx.com/videos/db"
 )
 
@@ -28,7 +28,7 @@ func createUser(user *User) error {
 	//下载头像
 	faceUrl := user.Avatar_hd
 	imgName := GetFileNameFromUrl(faceUrl)
-	savePath := ServerConst.FACE_IMAGE_DIR + imgName
+	savePath := config.FACE_IMAGE_DIR + imgName
 	err = downLoadFaceImgAndSave(faceUrl, savePath)
 	if err == FaceImgErrGif {	//如果头像是gif，就给他一个默认头像
 		imgName = "001.jpg"

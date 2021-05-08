@@ -17,6 +17,9 @@ func RegistApi(r *gin.Engine)  {
 	r.GET("/getPreVideo", GetPreVideo)
 	r.GET("/getNextVideo", GetNextVideo)
 	r.GET("/getStartVideos", GetStartVideos)
+
+	r.MaxMultipartMemory = 8 << 24  //128M
+	r.POST("/uploadFile", UploadFile)
 }
 
 type ResponseStruct struct {

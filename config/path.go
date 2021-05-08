@@ -1,4 +1,4 @@
-package ServerConst
+package config
 
 import "runtime"
 
@@ -11,15 +11,15 @@ var (
 	HOST = "http://localhost:8080"
 )
 
-func init()  {
+func InitConfig()  {
 	basePath := "/usr/videoProject/"
 	goos := runtime.GOOS
 	if goos == "windows" {
-		basePath = "E:/videoProject/"
+		basePath = "E:/videoProject/server/"
 	}
 	 LOG_DIR = basePath + "logs/"
 	 VIDEO_DIR = basePath + "videos/"
-	 HTML_DIR = basePath + "server/video/web/html/"
+	 HTML_DIR = basePath + "videoServer/html/"
 	 FACE_IMAGE_DIR = basePath + "faceImg/"
 	 ASSETS_DIR = basePath + "assets"
 }

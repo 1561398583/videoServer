@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 	"time"
-	"yx.com/videos/ServerConst"
+	"yx.com/videos/config"
 )
 
 var dsn = "wddlzh123:wddlmm123@Mysql@tcp(rm-wz96qo32w042vtyf2bo.mysql.rds.aliyuncs.com:3306)/video_info?charset=utf8mb4&parseTime=True&loc=Local"
@@ -16,7 +16,7 @@ var DB *gorm.DB
 
 func init()  {
 	//设置gorm log
-	logFile, err := os.OpenFile(ServerConst.LOG_DIR+ "gorm_log", os.O_WRONLY | os.O_APPEND | os.O_CREATE, 0777)
+	logFile, err := os.OpenFile(config.LOG_DIR+ "gorm_log", os.O_WRONLY | os.O_APPEND | os.O_CREATE, 0777)
 	if err != nil {
 		panic(err)
 	}

@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strings"
-	"yx.com/videos/ServerConst"
+	"yx.com/videos/config"
 	"yx.com/videos/db"
 	"yx.com/videos/utils"
 )
@@ -41,7 +41,7 @@ func addUser(userName, faceImageUrl string) error {
 	ss := strings.Split(s1, "/")
 	faceImageName := ss[len(ss) - 1]
 	//保存到服务器的path
-	savePath := ServerConst.FACE_IMAGE_DIR + faceImageName
+	savePath := config.FACE_IMAGE_DIR + faceImageName
 	//下载并保存faceImage
 	err := utils.FetchFileAndSave(faceImageUrl, savePath)
 	if err != nil {

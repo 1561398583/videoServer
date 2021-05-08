@@ -8,7 +8,7 @@ import (
 	"net/http/pprof"
 	"os"
 	"time"
-	"yx.com/videos/ServerConst"
+	"yx.com/videos/config"
 	"yx.com/videos/api"
 	"yx.com/videos/midWare"
 	"yx.com/videos/utils"
@@ -18,6 +18,8 @@ import (
 func main()  {
 	//开启debugger
 	StartHTTPDebuger()
+
+	config.InitConfig()
 
 	//gin engine
 	r := gin.New()
@@ -37,7 +39,7 @@ func main()  {
 			//params.ErrorMessage,
 		)
 	}
-	logWriter, err := os.OpenFile(ServerConst.LOG_DIR+ "gin.log", os.O_APPEND | os.O_CREATE, 0777 )
+	logWriter, err := os.OpenFile(config.LOG_DIR+ "gin.log", os.O_APPEND | os.O_CREATE, 0777 )
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -50,7 +52,7 @@ func main()  {
 
 
 	//捕获panic，并写入log
-	frc, err := os.Create(ServerConst.LOG_DIR + "recover.log")
+	frc, err := os.Create(config.LOG_DIR + "recover.log")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -82,29 +84,26 @@ func main()  {
 
 
 	//设置api error logger
-	api.Logger = utils.NewPdLogger(ServerConst.LOG_DIR+ "apiError/", "", utils.LstdFlags, utils.Debug)
+	api.Logger = utils.NewPdLogger(config.LOG_DIR+ "apiError/", "", utils.LstdFlags, utils.Debug)
 
 	//指定html文件path
-	r.LoadHTMLGlob(ServerConst.HTML_DIR + "*")
+	r.LoadHTMLGlob(config.HTML_DIR + "*")
 
 	//设置静态资源
-	r.StaticFS("/assets", http.Dir(ServerConst.ASSETS_DIR))
+	r.StaticFS("/assets", http.Dir(config.ASSETS_DIR))
 
 	//注册handlers
 	api.RegistApi(r)
 
 
 
-	/**
-	upload files
-	 */
-	r.MaxMultipartMemory = 8 << 24  //128M
+
 	r.GET("/uploadFilePage", func(context *gin.Context) {
 		context.HTML(http.StatusOK, "uploadFilePage.tmpl", gin.H{
 			"title": "Main website",
 		})
 	})
-	r.POST("/uploadFile", gin.HandlerFunc(utils.UploadFile))
+
 
 	r.Run() // listen and serve on 0.0.0.0:8080 (for windowsConst "localhost:8080")
 }

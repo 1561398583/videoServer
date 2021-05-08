@@ -8,7 +8,7 @@ import (
 	"os"
 	"strconv"
 	"time"
-	"yx.com/videos/ServerConst"
+	"yx.com/videos/config"
 	"yx.com/videos/db"
 )
 
@@ -243,7 +243,7 @@ func getAVideoAndComments(card *Card)  {
 	}
 
 	videoName := GetFileNameFromUrl(videoUrl)
-	savePath := ServerConst.VIDEO_DIR + videoName
+	savePath := config.VIDEO_DIR + videoName
 	err = downLoadOneVideoAndSave(videoUrl, savePath)
 	if err != nil {
 		fmt.Println("fetchVideoAndSave error : " + err.Error())

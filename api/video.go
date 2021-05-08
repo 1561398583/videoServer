@@ -4,7 +4,7 @@ import (
 	"errors"
 	"github.com/gin-gonic/gin"
 	"strconv"
-	"yx.com/videos/ServerConst"
+	"yx.com/videos/config"
 	"yx.com/videos/db"
 )
 
@@ -39,7 +39,7 @@ func GetVideos(c *gin.Context){
 		v2c := new(VideoInfo2Client)
 		v2c.ID = videos[i].ID
 		v2c.VideoTitle = videos[i].VideoTitle
-		v2c.VideoUrl = ServerConst.HOST + "/" + "assets/videos/" + videos[i].VideoFileName
+		v2c.VideoUrl = config.HOST + "/" + "assets/videos/" + videos[i].VideoFileName
 		v2c.CommentNum = videos[i].CommentNum
 		v2c.LikeNum = videos[i].LikeNum
 		v2c.VideoSeconds = videos[i].VideoSeconds
@@ -60,7 +60,7 @@ func GetPreVideo(c *gin.Context){
 	v2c := VideoInfo2Client{}
 	v2c.ID = video.ID
 	v2c.VideoTitle = video.VideoTitle
-	v2c.VideoUrl = ServerConst.HOST + "/" + "assets/videos/" + video.VideoFileName
+	v2c.VideoUrl = config.HOST + "/" + "assets/videos/" + video.VideoFileName
 	v2c.CommentNum = video.CommentNum
 	v2c.LikeNum = video.LikeNum
 	v2c.VideoSeconds = video.VideoSeconds
@@ -80,7 +80,7 @@ func GetNextVideo(c *gin.Context){
 	v2c := VideoInfo2Client{}
 	v2c.ID = video.ID
 	v2c.VideoTitle = video.VideoTitle
-	v2c.VideoUrl = ServerConst.HOST + "/" + "assets/videos/" + video.VideoFileName
+	v2c.VideoUrl = config.HOST + "/" + "assets/videos/" + video.VideoFileName
 	v2c.CommentNum = video.CommentNum
 	v2c.LikeNum = video.LikeNum
 	v2c.VideoSeconds = video.VideoSeconds
@@ -107,7 +107,7 @@ func GetStartVideos(c *gin.Context){
 		v2c := new(VideoInfo2Client)
 		v2c.ID = videos[i].ID
 		v2c.VideoTitle = videos[i].VideoTitle
-		v2c.VideoUrl = ServerConst.HOST + "/" + "assets/videos/" + videos[i].VideoFileName
+		v2c.VideoUrl = config.HOST + "/" + "assets/videos/" + videos[i].VideoFileName
 		v2c.CommentNum = videos[i].CommentNum
 		v2c.LikeNum = videos[i].LikeNum
 		v2c.VideoSeconds = videos[i].VideoSeconds
