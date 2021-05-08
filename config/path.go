@@ -8,7 +8,7 @@ var (
 	HTML_DIR string
 	FACE_IMAGE_DIR string
 	ASSETS_DIR string
-	HOST = "http://121.5.72.78:8080"
+	HOST = "http://121.5.72.78:80"
 )
 
 func InitConfig()  {
