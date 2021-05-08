@@ -15,7 +15,7 @@ func UploadFile(c *gin.Context)  {
 
 	form, err := c.MultipartForm()
 	if err != nil{
-		c.String(http.StatusBadRequest, "%#v", err)
+		c.String(http.StatusBadRequest, "parse multipart form data error : %s", err.Error())
 		return
 	}
 

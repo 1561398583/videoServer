@@ -64,7 +64,7 @@ func UploadFile(url, localFilePath, serverFilePath string)  {
 		return
 	}
 	if resp.StatusCode != 200 {
-		fmt.Println(resp)
+		fmt.Println(resp.Body)
 		return
 	}
 
