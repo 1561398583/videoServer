@@ -14,25 +14,20 @@ func GetVideos(c *gin.Context){
 	numStr := c.Query("num")
 	num, err := strconv.ParseInt(numStr, 10, 64)
 	if err != nil {
-		_ = c.Error(errors.New("num param is error"))
-		c.Abort()
+		if e := c.Error(errors.New("num param is error")); e != nil {
+			panic(e)
+		}
 		return
 	}
-	videos, err := db.GetVideosBySinceId(sinceVideoId, int(num))
+	videos, err := db.GetVideoNsBySinceId(sinceVideoId, int(num))
 
 	if err != nil {
-		_ = c.Error(err)
-		c.Abort()
+		if e := c.Error(err); e != nil {
+			panic(e)
+		}
 		return
 	}
-	if len(videos) == 0 {	//说明到达最后一个video了，那么就从头开始
-		videos, err = db.GetVideosBySinceId(sinceVideoId, 5)
-		if err != nil {
-			_ = c.Error(err)
-			c.Abort()
-			return
-		}
-	}
+
 	//转换struct
 	clientVideos := make([]*VideoInfo2Client, len(videos))
 	for i := 0; i < len(videos); i++ {
@@ -40,9 +35,9 @@ func GetVideos(c *gin.Context){
 		v2c.ID = videos[i].ID
 		v2c.VideoTitle = videos[i].VideoTitle
 		v2c.VideoUrl = config.HOST + "/" + "assets/videos/" + videos[i].VideoFileName
+		v2c.PicUrl = config.HOST + "/" + "assets/videoPic/" + videos[i].PicFileName
 		v2c.CommentNum = videos[i].CommentNum
 		v2c.LikeNum = videos[i].LikeNum
-		v2c.VideoSeconds = videos[i].VideoSeconds
 		islike := db.IsUserLikeVideo(userId, videos[i].ID)
 		v2c.IsLike = islike
 		clientVideos[i] = v2c
@@ -61,9 +56,9 @@ func GetPreVideo(c *gin.Context){
 	v2c.ID = video.ID
 	v2c.VideoTitle = video.VideoTitle
 	v2c.VideoUrl = config.HOST + "/" + "assets/videos/" + video.VideoFileName
+	v2c.PicUrl = config.HOST + "/" + "assets/videoPic/" + video.PicFileName
 	v2c.CommentNum = video.CommentNum
 	v2c.LikeNum = video.LikeNum
-	v2c.VideoSeconds = video.VideoSeconds
 	islike := db.IsUserLikeVideo(userId, video.ID)
 	v2c.IsLike = islike
 
@@ -81,9 +76,9 @@ func GetNextVideo(c *gin.Context){
 	v2c.ID = video.ID
 	v2c.VideoTitle = video.VideoTitle
 	v2c.VideoUrl = config.HOST + "/" + "assets/videos/" + video.VideoFileName
+	v2c.PicUrl = config.HOST + "/" + "assets/videoPic/" + video.PicFileName
 	v2c.CommentNum = video.CommentNum
 	v2c.LikeNum = video.LikeNum
-	v2c.VideoSeconds = video.VideoSeconds
 	islike := db.IsUserLikeVideo(userId, video.ID)
 	v2c.IsLike = islike
 
@@ -93,29 +88,28 @@ func GetNextVideo(c *gin.Context){
 func GetStartVideos(c *gin.Context){
 	userId := c.Query("uid")
 
-	videos := make([]*db.Video, 3)
-	video0 := db.GetFirstVideo()
-	video1 := db.GetNextVideo(video0.ID)
-	video2 := db.GetPreVideo(video0.ID)
-	videos[0] = video0
-	videos[1] = video1
-	videos[2] = video2
+	videos, err := db.GetVideoNsBySinceId("0", 3)
+	if err != nil {
+		if e := c.Error(err); e != nil {
+			panic(e)
+		}
+		return
+	}
 
 	//转换struct
-	clientVideos := make([]*VideoInfo2Client, 3)
-	for i := 0; i < 3; i++ {
+	clientVideos := make([]*VideoInfo2Client, len(videos))
+	for i := 0; i < len(videos); i++ {
 		v2c := new(VideoInfo2Client)
 		v2c.ID = videos[i].ID
 		v2c.VideoTitle = videos[i].VideoTitle
 		v2c.VideoUrl = config.HOST + "/" + "assets/videos/" + videos[i].VideoFileName
+		v2c.PicUrl = config.HOST + "/" + "assets/videoPic/" + videos[i].PicFileName
 		v2c.CommentNum = videos[i].CommentNum
 		v2c.LikeNum = videos[i].LikeNum
-		v2c.VideoSeconds = videos[i].VideoSeconds
 		islike := db.IsUserLikeVideo(userId, videos[i].ID)
 		v2c.IsLike = islike
 		clientVideos[i] = v2c
 	}
-
 	c.JSON(200, clientVideos)
 }
 
@@ -127,5 +121,5 @@ type VideoInfo2Client struct {
 	LikeNum int
 	IsLike bool
 	CommentNum int
-	VideoSeconds float32
+	PicUrl string
 }

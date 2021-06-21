@@ -12,6 +12,7 @@ require (
 	gorm.io/driver/mysql v1.0.3
 	gorm.io/gorm v1.21.4
 	github.com/google/uuid v1.1.2
+	github.com/unrolled/secure v1.0.9
 )
 
 //防火墙原因，这些包从github下载

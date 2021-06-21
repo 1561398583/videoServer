@@ -1,12 +1,10 @@
 package creeper
 
 import (
-	"fmt"
-	"golang.org/x/net/html"
-	"os"
 	"testing"
 )
 
+/*
 func init()  {
 	f, err := os.Open("E:\\go_project\\videoProject\\server\\video\\creeper\\test.html")
 	if err != nil {
@@ -19,6 +17,8 @@ func init()  {
 	rootNodeSelector = NewNodeSelector(rootNode)
 	fmt.Println("init nodeSelector test finish")
 }
+
+ */
 
 var rootNodeSelector *NodeSelector
 

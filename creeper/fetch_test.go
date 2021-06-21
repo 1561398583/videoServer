@@ -118,7 +118,7 @@ func TestGetAVideoAndComments(t *testing.T)  {
 		fmt.Println(err)
 	}
 	card := firstPageIndex.Data.Cards[3]
-	getAVideoAndComments(&card)
+	getAVideoAllData(&card)
 
 }
 

@@ -1,0 +1,1119 @@
+
+2021/06/17 22:19:24 E:/videoProject/server/videoServer/db/userDb.go:36 record not found
+[14.988ms] [rows:0] SELECT * FROM `users` WHERE id = 'oEn2F4k7H8npoA2LjydjhCE7UUsY' ORDER BY `users`.`id` LIMIT 1
+
+2021/06/17 22:20:17 E:/videoProject/server/videoServer/db/userDb.go:36 record not found
+[109.119ms] [rows:0] SELECT * FROM `users` WHERE id = 'oEn2F4k7H8npoA2LjydjhCE7UUsY' ORDER BY `users`.`id` LIMIT 1
+
+2021/06/17 22:20:52 E:/videoProject/server/videoServer/db/userDb.go:36 record not found
+[20.058ms] [rows:0] SELECT * FROM `users` WHERE id = 'oEn2F4k7H8npoA2LjydjhCE7UUsY' ORDER BY `users`.`id` LIMIT 1
+
+2021/06/17 22:22:03 E:/videoProject/server/videoServer/db/userDb.go:36 record not found
+[29.983ms] [rows:0] SELECT * FROM `users` WHERE id = 'oEn2F4k7H8npoA2LjydjhCE7UUsY' ORDER BY `users`.`id` LIMIT 1
+
+2021/06/17 22:35:17 E:/videoProject/server/videoServer/db/userDb.go:36 record not found
+[14.029ms] [rows:0] SELECT * FROM `users` WHERE id = 'oEn2F4k7H8npoA2LjydjhCE7UUsY' ORDER BY `users`.`id` LIMIT 1
+
+2021/06/17 23:48:39 E:/videoProject/server/videoServer/db/userDb.go:36 record not found
+[48.150ms] [rows:0] SELECT * FROM `users` WHERE id = 'oEn2F4k7H8npoA2LjydjhCE7UUsY' ORDER BY `users`.`id` LIMIT 1
+
+2021/06/17 23:50:49 E:/videoProject/server/videoServer/db/userDb.go:36 record not found
+[38.660ms] [rows:0] SELECT * FROM `users` WHERE id = 'oEn2F4k7H8npoA2LjydjhCE7UUsY' ORDER BY `users`.`id` LIMIT 1
+
+2021/06/18 00:40:58 E:/videoProject/server/videoServer/db/userDb.go:36 record not found
+[20.225ms] [rows:0] SELECT * FROM `users` WHERE id = 'oEn2F4k7H8npoA2LjydjhCE7UUsY' ORDER BY `users`.`id` LIMIT 1
+
+2021/06/18 00:45:59 E:/videoProject/server/videoServer/db/userDb.go:36 record not found
+[14.094ms] [rows:0] SELECT * FROM `users` WHERE id = 'oEn2F4k7H8npoA2LjydjhCE7UUsY' ORDER BY `users`.`id` LIMIT 1
+
+2021/06/18 00:47:56 E:/videoProject/server/videoServer/db/userDb.go:36 record not found
+[115.994ms] [rows:0] SELECT * FROM `users` WHERE id = 'oEn2F4k7H8npoA2LjydjhCE7UUsY' ORDER BY `users`.`id` LIMIT 1
+
+2021/06/18 21:52:14 E:/videoProject/server/videoServer/db/userLikeVideo.go:25 Error 1062: Duplicate entry '0-' for key 'users_like_videos.user_video_rel'
+[92.607ms] [rows:0] INSERT INTO `users_like_videos` (`user_id`,`video_id`) VALUES ('0','')
+
+2021/06/18 22:12:01 E:/videoProject/server/videoServer/db/userLikeVideo.go:25 Error 1062: Duplicate entry 'oEn2F4k7H8npoA2LjydjhCE7UUsY-4547726404755823' for key 'users_like_videos.user_video_rel'
+[75.819ms] [rows:0] INSERT INTO `users_like_videos` (`user_id`,`video_id`) VALUES ('oEn2F4k7H8npoA2LjydjhCE7UUsY','4547726404755823')
+
+2021/06/18 22:12:59 E:/videoProject/server/videoServer/db/userLikeVideo.go:25 Error 1062: Duplicate entry 'oEn2F4k7H8npoA2LjydjhCE7UUsY-4547726404755823' for key 'users_like_videos.user_video_rel'
+[37.995ms] [rows:0] INSERT INTO `users_like_videos` (`user_id`,`video_id`) VALUES ('oEn2F4k7H8npoA2LjydjhCE7UUsY','4547726404755823')
+
+2021/06/18 23:14:52 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[31.982ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547024495837368' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:14:52 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.990ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:14:52 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[30.982ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:14:52 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.989ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:14:52 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[85.951ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:14:59 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[27.982ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547024495837368' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[38.979ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[32.980ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[30.981ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.986ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.413ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547726404755823' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[25.826ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547906884868170' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.730ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548069369316885' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.794ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548078411977270' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.027ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548279533044303' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:30 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.258ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548788541195337' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:30 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.307ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549020528416489' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:30 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.036ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549071202950951' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:30 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.537ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549169388462079' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:30 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.451ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549173024397649' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:34 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.989ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548279533044303' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:48 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[33.982ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:48 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[31.981ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:48 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[29.984ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:15:48 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[59.965ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:04 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[11.236ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547726404755823' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:04 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[13.833ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547906884868170' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:04 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.327ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548069369316885' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:05 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[53.925ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548078411977270' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:07 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.584ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548788541195337' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:07 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.396ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549020528416489' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:07 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.393ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549071202950951' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:07 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.256ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549169388462079' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:07 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.716ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549173024397649' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:13 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.707ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549380559079704' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:13 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[35.817ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549461160235252' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:13 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.384ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549529246634821' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:13 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.131ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549534870413374' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:13 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.840ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549754023314489' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:34 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.991ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:34 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[33.979ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:34 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.990ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:34 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.816ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:36 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[40.071ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547726404755823' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:36 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.274ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547906884868170' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:36 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[29.983ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548069369316885' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:36 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[27.541ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548078411977270' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:36 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.288ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548279533044303' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:38 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.041ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548788541195337' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:38 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[25.757ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549020528416489' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:38 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.611ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549071202950951' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:38 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[95.886ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549169388462079' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:16:38 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.371ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549173024397649' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:17:36 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[27.982ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:17:36 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.988ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:17:36 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.984ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:17:36 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[52.970ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:17:49 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.386ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:17:49 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.970ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:17:49 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[25.988ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:17:49 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[13.008ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[42.977ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.985ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.992ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.981ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:15 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.983ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:15 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[31.982ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:15 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.988ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:15 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[33.981ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.141ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547024495837368' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:32 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.023ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547726404755823' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:32 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[23.069ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547906884868170' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:32 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[23.471ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548069369316885' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:32 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.494ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548078411977270' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:32 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.373ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548279533044303' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:34 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.069ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548788541195337' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:34 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.080ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549020528416489' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:34 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.129ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549071202950951' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:34 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[35.439ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549169388462079' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:34 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[23.439ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549173024397649' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:37 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.085ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549380559079704' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:37 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.012ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549461160235252' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:38 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[37.874ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549529246634821' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:38 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.897ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549534870413374' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:38 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.087ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549754023314489' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:41 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[40.940ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549071202950951' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:47 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.941ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549893299899725' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:47 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[41.656ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549895140939768' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:47 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.602ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550090947035914' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:47 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[23.623ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550252634579673' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:47 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[34.558ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550255687245676' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:48 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.109ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550546172679278' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:48 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[14.028ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550551389608408' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:48 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.314ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550624269572746' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:48 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[35.415ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550625658667705' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:48 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[31.305ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550838972842271' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:50 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[27.724ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550996049013688' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:50 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[122.684ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4551000596420668' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:50 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[28.298ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4551329018291104' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:50 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[45.546ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4551345640051683' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:18:50 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[37.030ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4551627484964658' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 23:19:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[23.819ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550838972842271' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:08:58 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.096ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4551692274112562' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:08:58 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.725ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4551705335956143' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:08:58 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[31.923ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4552064753997121' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:08:58 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.862ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4552413019901586' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:08:58 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[11.771ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4552415971378875' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[25.079ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4552631027236940' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[29.231ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4552766880486329' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.023ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4552786455562408' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.844ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4553132497439225' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.661ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4553141477449762' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:13 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[28.552ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4553484668771807' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:13 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.581ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4553495207746859' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:13 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.161ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4553860348121336' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:13 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[33.566ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4553864349751198' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:13 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.000ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4554171599297591' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:28 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.532ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4554219359305826' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:28 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[28.954ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4554228179152756' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:28 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.928ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4554591386209054' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:28 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.377ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4555688313101789' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:28 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.118ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4556055893251733' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:35 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.089ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4556402934684039' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:35 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.049ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4557835340090538' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:35 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[30.820ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4558209799422339' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:35 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.265ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4558580777223337' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:35 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.044ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4559309826430214' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:53 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.166ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4559311168345124' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:53 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[14.994ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4559657240378292' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:53 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.987ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4560016357727506' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:53 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.984ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4560020659767768' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:53 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[27.065ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4560367168272029' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:54 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[13.512ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4560372201171121' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:54 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.896ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4560747332643200' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:54 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[30.629ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4560748183035341' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:54 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.666ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4561831567571043' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:54 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.388ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4561864186404352' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.532ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4562215976578979' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.916ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4562221222600908' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.637ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4562569006945568' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:56 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.377ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4562571129260463' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:09:56 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[11.703ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4562921751586331' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:10:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.727ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4562925278989284' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:10:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.101ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4563280376892516' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:10:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.738ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4563281547370988' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:10:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[29.859ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4563646775301677' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:10:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.856ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4563887049933022' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:10:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.252ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4564015025493912' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:10:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.779ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4564233549780696' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:10:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[25.733ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4564352974460944' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:10:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.821ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4564377221202875' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:10:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.170ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4564377988236965' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:10:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.054ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4564724128160666' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:10:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.562ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4564727169032301' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:10:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.366ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4565097571161450' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:10:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.197ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4565473423010168' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 12:10:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[13.833ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4565475294183927' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:10:24 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[39.601ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4565845341378053' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:10:24 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[172.471ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4567180329358871' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:10:24 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[310.462ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4567917729416922' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:10:24 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[46.098ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4569725240084431' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:10:24 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[55.346ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4570746426491210' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:01 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.952ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4570748256258490' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:01 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.439ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4570770595125411' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:01 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.367ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4570906136943820' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:01 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.727ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4571661527422849' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:01 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.044ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4571829774321761' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.066ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4571860820564323' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.513ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4571885033492348' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[29.471ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4572224662539495' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.383ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4572262864263811' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.655ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4572299451179864' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.999ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4572379890583064' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.084ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4572558194640194' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[28.132ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4572610916778274' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.617ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4572641237147330' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[25.522ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4572663538781895' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:11 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.039ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4572927637065814' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:11 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.534ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4573016032546030' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:11 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[23.267ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4573019496784275' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:11 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[23.165ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4573269347270826' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:11 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.157ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4573389295714439' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:19 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.293ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4573808993773206' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:19 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.793ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4573833400950704' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:19 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[12.619ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4573834357516497' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:19 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.755ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4574036157792597' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:19 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.201ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4574103547423121' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:33 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[30.979ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4574174670236019' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:33 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[13.704ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4574442661086843' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:33 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.157ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4574458595256739' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:33 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.133ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4574462240628636' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:33 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[14.553ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4574752259702866' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:43 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.725ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4574804138530906' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:43 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.128ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4574813769174377' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:43 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.798ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4574834967187319' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:43 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.394ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4575171325205713' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:11:43 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[39.278ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4575173816882153' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.783ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4575175746263990' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.358ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4575273989185257' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.755ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4575473130275146' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.527ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4575538314217797' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.283ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4575557477730113' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:08 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.251ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4575608031937117' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:08 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[27.428ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4575809211728125' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:08 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.462ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4575910834999228' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:08 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.003ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4575916661933919' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:08 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.934ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4575918205180478' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:09 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.365ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4575992754473941' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:10 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[23.334ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4575995149158100' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:10 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.266ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4576002548174223' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:10 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.865ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4576293779669157' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:10 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.741ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4576370607528955' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:15 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.837ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4576577679787327' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:15 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[13.246ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4576724786620091' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:15 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[13.079ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4576901769204723' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:16 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.915ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4576970840483313' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:16 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.152ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4577006694699098' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:17 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.776ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4577099916782077' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:17 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[12.707ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4577342750459384' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:17 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[12.070ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4577350082101921' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:17 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[27.571ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4577613287267007' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:18 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.404ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4577617405282322' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:19 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.500ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4577727049378889' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:19 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.864ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4577981752415384' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:19 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.457ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4578020314062075' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:19 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.446ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4578089625984832' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:19 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[23.805ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4578832923240425' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:20 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.493ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4578839605285133' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:20 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.220ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4579138105246888' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:20 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[30.058ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4579160880062692' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:20 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.093ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4579272130045988' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:20 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.681ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4579423397879336' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:21 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.233ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4579502476235948' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:21 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.492ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4579873367008428' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:21 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[13.120ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4579883210774380' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:22 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[29.444ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4579889900686623' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:22 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[14.000ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4580249792683802' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:23 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[33.610ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4580251360834120' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:23 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.072ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4580541158663545' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:23 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.038ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4580544145264143' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:23 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.105ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4580953014671166' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:23 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.690ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4580981329108019' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:24 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.825ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4580995100053077' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:25 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[231.055ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4581965775246112' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:25 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.179ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4582050022303492' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:25 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[14.507ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4582069210457473' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:25 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.131ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4582161035823122' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[33.183ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4582359774538103' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[32.230ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4582367903625258' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.500ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4582395820381120' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.990ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4582539086006701' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:12:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.229ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4582780233845897' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:14:23 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[14.991ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:14:23 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[47.974ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:14:23 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.988ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:14:23 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[38.268ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:14:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.320ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547726404755823' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:14:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.010ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547906884868170' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:14:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.367ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548069369316885' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:14:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.976ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548078411977270' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:14:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.926ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548279533044303' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:14:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[45.973ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:14:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[32.982ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:14:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[29.982ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:14:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[31.292ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.251ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547726404755823' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.085ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547906884868170' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.059ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548069369316885' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[31.847ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548078411977270' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:00 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[28.867ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548279533044303' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:01 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.377ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548788541195337' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:01 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.290ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549020528416489' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:01 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[11.530ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549071202950951' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:01 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.371ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549169388462079' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:01 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.605ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549173024397649' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:02 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[46.094ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549380559079704' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:02 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.293ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549461160235252' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:02 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[25.232ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549529246634821' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:02 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[23.759ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549534870413374' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:02 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.669ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549754023314489' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[25.962ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549893299899725' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[13.619ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549895140939768' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.669ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550090947035914' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.802ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550252634579673' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:03 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.274ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550255687245676' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:05 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.614ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550546172679278' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:05 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.699ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550551389608408' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:05 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[13.195ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550624269572746' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:15:05 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.038ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4550625658667705' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:18:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.988ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:18:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.311ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:18:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[31.172ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:18:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.989ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:18:57 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.986ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547726404755823' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:18:57 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[27.529ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547906884868170' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:18:57 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.100ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548069369316885' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:18:57 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.652ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548078411977270' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:18:57 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.232ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548279533044303' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:18:59 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.082ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548788541195337' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:18:59 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.443ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549020528416489' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:18:59 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.353ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549071202950951' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:18:59 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.341ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549169388462079' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:18:59 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.564ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549173024397649' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:19:05 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.180ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548788541195337' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:19:10 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.221ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549380559079704' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:19:10 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[45.211ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549461160235252' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:19:10 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.119ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549529246634821' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:19:10 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.804ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549534870413374' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:19:10 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[27.004ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549754023314489' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:19:46 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.984ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:19:46 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.991ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:19:46 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[32.982ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:19:46 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.984ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:19:57 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[23.987ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:19:57 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[31.982ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:19:57 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[37.978ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:19:57 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.988ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:20:08 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.985ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:20:08 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[27.985ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:20:08 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[44.975ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:20:08 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[28.982ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:22:07 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.990ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:22:07 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.989ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:22:07 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[16.991ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:22:07 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[34.981ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:22:18 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.116ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:22:19 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[27.113ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:22:20 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.771ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:22:21 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.406ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:22:22 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[23.616ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:22:23 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.271ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:22:24 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[25.371ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:22:25 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[13.824ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:22:26 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.987ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:22:27 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.099ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:23:41 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[28.982ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:23:41 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.989ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:23:41 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[31.983ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:23:41 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.984ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:23:50 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.985ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:23:50 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.987ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547332819390491' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:23:50 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.986ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547336171169459' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:23:50 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[40.977ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:24:06 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[15.031ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547229635579432' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:24:12 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.979ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547726404755823' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:24:12 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.788ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547906884868170' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:24:12 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.288ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548069369316885' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:24:12 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.445ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548078411977270' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:24:12 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[19.910ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548279533044303' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:24:15 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.986ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4547720800377550' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:50:52 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[25.140ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4548788541195337' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:50:52 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[25.668ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549020528416489' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:50:52 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.980ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549071202950951' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:50:52 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.938ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549169388462079' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:50:52 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.929ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549173024397649' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:50:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[24.947ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549380559079704' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:50:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.527ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549461160235252' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:50:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.929ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549529246634821' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:50:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[18.748ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549534870413374' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/19 14:50:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.832ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='oEn2F4k7H8npoA2LjydjhCE7UUsY' AND video_id='4549754023314489' ORDER BY `user_like_videos`.`id` LIMIT 1

@@ -1,19 +1,19 @@
 package creeper
 
 import (
-	"io/ioutil"
 	"net/url"
 	"os"
 	"strings"
 )
 
-var cookieFilePath = "E:/go_project/videoProject/server/video/creeper/cookie"
+var cookieFilePath = "E:\\videoProject\\server\\videoServer\\creeper\\cookie"
+
 
 var cookieMap map[string]string
 
 func init()  {
 	cookieMap = make(map[string]string)
-	CookieFile2Map()
+	//CookieFile2Map()
 }
 
 func UpdateCookie(cookies []string)  {
@@ -47,6 +47,7 @@ func getMWeiboCnParams(name string) string{
 	return m[name]
 }
 
+/*
 func CookieFile2Map()  {
 	cookieF, err := os.OpenFile(cookieFilePath, os.O_RDWR, 0777)
 	if err != nil {
@@ -64,6 +65,8 @@ func CookieFile2Map()  {
 	}
 	CookieStr2Map(string(bs))
 }
+
+ */
 
 func CookieMap2Str(cookieMap map[string]string)  string{
 	r := ""

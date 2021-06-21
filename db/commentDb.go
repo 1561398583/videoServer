@@ -20,6 +20,7 @@ type Comment struct {
 	LikeNum int
 }
 
+
 func AddComments(cs []*Comment)  error{
 	if cs == nil || len(cs) == 0 {
 		return nil

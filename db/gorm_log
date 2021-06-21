@@ -1,0 +1,75 @@
+
+2021/06/18 20:51:55 E:/videoProject/server/videoServer/db/userLikeVideo.go:21 Error 1062: Duplicate entry 'user1-video1' for key 'users_like_videos.user_video_rel'
+[40.893ms] [rows:0] INSERT INTO `users_like_videos` (`user_id`,`video_id`) VALUES ('user1','video1')
+
+2021/06/18 20:52:52 E:/videoProject/server/videoServer/db/userLikeVideo.go:23 Error 1062: Duplicate entry 'user1-video1' for key 'users_like_videos.user_video_rel'
+[84.768ms] [rows:0] INSERT INTO `users_like_videos` (`user_id`,`video_id`) VALUES ('user1','video1')
+
+2021/06/18 20:56:25 E:/videoProject/server/videoServer/db/userLikeVideo.go:26 Error 1062: Duplicate entry 'user1-video1' for key 'users_like_videos.user_video_rel'
+[40.571ms] [rows:0] INSERT INTO `users_like_videos` (`user_id`,`video_id`) VALUES ('user1','video1')
+
+2021/06/18 21:09:12 E:/videoProject/server/videoServer/db/userDb.go:36 record not found
+[45.674ms] [rows:0] SELECT * FROM `users` WHERE id = 'test_notFound' ORDER BY `users`.`id` LIMIT 1
+
+2021/06/18 21:10:36 E:/videoProject/server/videoServer/db/userDb.go:35 record not found
+[17.994ms] [rows:0] SELECT * FROM `users` WHERE id = 'test_notFound' ORDER BY `users`.`id` LIMIT 1
+
+2021/06/18 21:15:25 E:/videoProject/server/videoServer/db/userDb.go:51 record not found
+[24.710ms] [rows:0] SELECT * FROM `users` WHERE `id` = 'test1' ORDER BY `users`.`id` LIMIT 1
+
+2021/06/18 22:32:40 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 Error 1146: Table 'video_info.user_like_videos' doesn't exist
+[11.008ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='123' AND video_id='123'
+
+2021/06/18 22:34:05 E:/videoProject/server/videoServer/db/userLikeVideo.go:11 Error 1146: Table 'video_info.user_like_videos' doesn't exist
+[13.008ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='123' AND video_id='123'
+
+2021/06/18 22:36:23 E:/videoProject/server/videoServer/db/userLikeVideo.go:9 Error 1146: Table 'video_info.user_like_videos' doesn't exist
+[9.002ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='123' AND video_id='123'
+
+2021/06/18 22:36:23 E:/videoProject/server/videoServer/db/userLikeVideo.go:9 Error 1146: Table 'video_info.user_like_videos' doesn't exist
+[7.842ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='test_user_id1' AND video_id='test_video_id1'
+
+2021/06/18 22:39:18 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 Error 1146: Table 'video_info.user_like_videos' doesn't exist
+[12.996ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='123' AND video_id='123'
+
+2021/06/18 22:39:18 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 Error 1146: Table 'video_info.user_like_videos' doesn't exist
+[8.664ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='test_user_id1' AND video_id='test_video_id1'
+
+2021/06/18 22:41:51 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 Error 1146: Table 'video_info.user_like_videos' doesn't exist
+[10.012ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='user1' AND video_id='video2'
+
+2021/06/18 22:41:51 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 Error 1146: Table 'video_info.user_like_videos' doesn't exist
+[17.409ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='123' AND video_id='123'
+
+2021/06/18 22:41:51 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 Error 1146: Table 'video_info.user_like_videos' doesn't exist
+[15.797ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='test_user_id1' AND video_id='test_video_id1'
+
+2021/06/18 22:47:34 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.207ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='user1' AND video_id='video2' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 22:49:35 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[22.562ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='user1' AND video_id='video2' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 22:51:50 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[23.985ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='user1' AND video_id='video2' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 22:51:50 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[12.943ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='123' AND video_id='123' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 22:51:50 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.536ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='test_user_id1' AND video_id='test_video_id1' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 22:52:48 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[20.212ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='user1' AND video_id='video1' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 22:52:48 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[17.131ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='123' AND video_id='123' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 22:52:48 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[23.027ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='test_user_id1' AND video_id='test_video_id1' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 22:53:39 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[26.551ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='123' AND video_id='123' ORDER BY `user_like_videos`.`id` LIMIT 1
+
+2021/06/18 22:53:39 E:/videoProject/server/videoServer/db/userLikeVideo.go:10 record not found
+[21.049ms] [rows:0] SELECT * FROM `user_like_videos` WHERE user_id='test_user_id1' AND video_id='test_video_id1' ORDER BY `user_like_videos`.`id` LIMIT 1

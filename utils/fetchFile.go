@@ -2,6 +2,7 @@ package utils
 
 import (
 	"errors"
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"os"
@@ -9,10 +10,15 @@ import (
 
 //从url抓取文件并存储
 func FetchFileAndSave(fileUrl, savePath string) error{
-	client := &http.Client{}
+	fmt.Println("want fetch file ")
+	fmt.Println("From : " + fileUrl)
+	fmt.Println("To : " + savePath)
+
+	client := http.DefaultClient
 
 	req, err := http.NewRequest("GET", fileUrl, nil)
 	if err != nil {
+		fmt.Println("Fail : " + err.Error())
 		return err
 	}
 	//照着谷歌浏览器f12中的信息写,冒充谷歌浏览器
@@ -21,6 +27,7 @@ func FetchFileAndSave(fileUrl, savePath string) error{
 	//client执行这个request
 	resp, err := client.Do(req)
 	if err != nil {
+		fmt.Println("Fail : " + err.Error())
 		return err
 	}
 	if resp.StatusCode != 200 {
@@ -51,10 +58,12 @@ func FetchFileAndSave(fileUrl, savePath string) error{
 		}
 	}()
 
-	_, err = f.Write(body)
+	n, err := f.Write(body)
 	if err != nil {
 		return err
 	}
+
+	fmt.Printf("write %d bytes to :", n)
 
 	return nil
 }

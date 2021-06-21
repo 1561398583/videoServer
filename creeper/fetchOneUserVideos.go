@@ -5,11 +5,8 @@ import (
 	"errors"
 	"fmt"
 	"io/ioutil"
-	"os"
 	"strconv"
 	"time"
-	"yx.com/videos/config"
-	"yx.com/videos/db"
 )
 
 //下面这些变量从浏览器获取，访问主页。
@@ -44,7 +41,7 @@ func FetchVideos()  {
 		fmt.Println(err)
 		return
 	}
-	GetUserVideosAndComments(videoContainerId)
+	GetUserAllVideos(videoContainerId)
 }
 
 //访问主页
@@ -89,7 +86,7 @@ func QueryMainPage() (string, error) {
 	return videoContainerId, nil
 }
 
-func GetUserVideosAndComments(videoContainerId string) {
+func GetUserAllVideos(videoContainerId string) {
 	since_id := ""
 	/*
 	get first page index
@@ -121,7 +118,11 @@ func GetUserVideosAndComments(videoContainerId string) {
 	time.Sleep(5 * time.Second)
 
 	for _, card := range firstPageIndex.Data.Cards {
-		getAVideoAndComments(&card)
+		err := getAVideoAllData(&card)
+		if err != nil {
+			fmt.Println(err)
+			continue
+		}
 		getTotal += 1
 		fmt.Println("get video finish : " + strconv.FormatInt(int64(getTotal), 10) + "/" + strconv.FormatInt(int64(videoTotal), 10))
 	}
@@ -152,7 +153,11 @@ func GetUserVideosAndComments(videoContainerId string) {
 		since_id = strconv.FormatInt(onePageIndex.Data.CardlistInfo.Since_id, 10)
 
 		for _, card := range onePageIndex.Data.Cards {
-			getAVideoAndComments(&card)
+			err := getAVideoAllData(&card)
+			if err != nil {
+				fmt.Println(err)
+				continue
+			}
 			getTotal += 1
 			fmt.Println("get video finish : " + strconv.FormatInt(int64(getTotal), 10) + "/" + strconv.FormatInt(int64(videoTotal), 10))
 		}
@@ -167,6 +172,9 @@ func GetUserVideosAndComments(videoContainerId string) {
 
 	fmt.Printf("get %d video, over", getTotal)
 }
+
+
+
 
 func getOnePageIndex(urlParams map[string]string)  (*OnePageIndex, error){
 	headers := make(map[string]string)
@@ -214,124 +222,4 @@ func getOnePageIndex(urlParams map[string]string)  (*OnePageIndex, error){
 	return &onePageIndex, nil
 }
 
-var VideoExisted = errors.New("video is existed")
-var NotAVideo = errors.New("not a video")
-var VideoUrlEmpty = errors.New("video url is empty")
-
-
-func getAVideoAndComments(card *Card)  {
-	fmt.Println("start get " + card.Mblog.Id)
-	if card.Mblog.PageInfo.Type != "video" {
-		fmt.Println("not a video")
-		return
-	}
-	//video是否已经存在
-	video, err := db.GetVideoById(card.Mblog.Id)
-	if err == nil && video != nil {
-		fmt.Println("video is existed")
-		return
-	}
-
-	var videoUrl string
-	if card.Mblog.PageInfo.MediaInfo.StreamUrl != "" {
-		videoUrl = card.Mblog.PageInfo.MediaInfo.StreamUrl
-	}else if card.Mblog.PageInfo.MediaInfo.StreamUrlHd != "" {
-		videoUrl = card.Mblog.PageInfo.MediaInfo.StreamUrlHd
-	}else {
-		fmt.Println("video url is empty")
-		return
-	}
-
-	videoName := GetFileNameFromUrl(videoUrl)
-	savePath := config.VIDEO_DIR + videoName
-	err = downLoadOneVideoAndSave(videoUrl, savePath)
-	if err != nil {
-		fmt.Println("fetchVideoAndSave error : " + err.Error())
-		return
-	}else {
-		fmt.Println("get video " + videoName + " sucess")
-	}
-
-	time.Sleep(5 * time.Second)
-
-	/*
-		获取评论
-	*/
-	wbId := card.Mblog.Id
-	fmt.Println("start get " + wbId + " comments")
-	cNum, err := GetVideoComments(wbId)
-	if err != nil {
-		fmt.Println(err)
-	}else {
-		fmt.Printf("get comments sucess %d / %d \n", cNum, card.Mblog.CommentsCount)
-	}
-
-	//添加video
-	newVideo := db.Video{
-		ID:            card.Mblog.Id,
-		CreateTime:   card.Mblog.CreatedAt,
-		VideoTitle:    card.Mblog.PageInfo.Title,
-		VideoFileName: videoName,
-		VideoSeconds:  card.Mblog.PageInfo.MediaInfo.Duration,
-		LikeNum:       card.Mblog.AttitudesCount,
-		CommentNum:    card.Mblog.CommentsCount,
-	}
-	err = db.AddVideo(&newVideo)
-	if err != nil {
-		fmt.Println("add video error : " + err.Error())
-		return
-	}
-	fmt.Println("get " + card.Mblog.Id + " sucess")
-
-	time.Sleep(10 * time.Second)
-}
-
-
-func downLoadOneVideoAndSave(videoUrl, savePath string) error{
-	headers := make(map[string]string)
-	headers["Accept"] = "*/*"
-	headers["Accept-Encoding"] = "identity;q=1, *;q=0"
-	headers["Accept-Language"] = "en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7"
-	headers["Connection"] = "keep-alive"
-	headers["Host"] = "f.video.weibocdn.com"
-	headers["Range"] = "bytes=0-"
-	headers["Referer"] = "https://m.weibo.cn/"
-
-	resp,err := GetResponse(videoUrl, nil, headers)
-	if err != nil {
-		return errors.New("downloadOneVideoAndSave error : " + err.Error())
-	}
-
-	if resp.Header["Content-Type"][0] != "video/mp4" {
-		ShowResponse(resp)
-		return errors.New("downLoad video error : is not a mp4")
-	}
-
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		panic(err)
-	}
-
-	f, err := os.Create(savePath)
-	if err != nil {
-		panic(err)
-	}
-	defer func() {
-		err := f.Close()
-		if err != nil {
-			panic(err)
-		}
-	}()
-
-	n, err := f.Write(body)
-	if err != nil {
-		panic(err)
-	}
-
-	if n == 0 {
-		return errors.New("fetchVideoAndSave write 0 bytes")
-	}
-
-	return nil
-}
 

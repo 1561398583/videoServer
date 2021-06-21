@@ -138,6 +138,6 @@ type Level2Comment struct {
 type User struct {
 	Id int64	`json:"id"`
 	ScreenName string	`json:"screen_name"`
-	Avatar_hd string	`json:"avatar_hd"`
+	Avatar_hd string	`json:"avatar_hd"`	//头像url
 }
 

@@ -6,8 +6,8 @@ import (
 )
 
 func TestGetVideosBySinceId(t *testing.T) {
-	sinceId := "0"
-	videos, err := GetVideosBySinceId(sinceId, 10)
+	sinceId := "4646963578931551"
+	videos, err := GetVideoNsBySinceId(sinceId, 10)
 	if err != nil {
 		t.Error(err)
 	}
@@ -27,6 +27,47 @@ func TestGetLastVideoVideo(t *testing.T) {
 }
 
 func TestGetPreVideo(t *testing.T) {
-	video := GetPreVideo("4629254341920300")
+	video := GetPreVideo("4547024495837368")
 	fmt.Printf("%#v", *video)
 }
+
+func TestGetNextVideo(t *testing.T) {
+	video := GetNextVideo("4547024495837368")
+	fmt.Printf("%#v", *video)
+}
+
+//没有封面图片的加上默认的图片
+func Test_addPic(t *testing.T)  {
+	var videoNum int
+	DB.Raw("SELECT count(*) FROM video_ns").Scan(&videoNum)
+
+	offset := 0
+	var videos []*VideoN
+	for offset < videoNum {
+		// SELECT * FROM video_ns OFFSET offset LIMIT 10;
+		DB.Limit(10).Offset(offset).Find(&videos)
+
+		addPic(videos)
+
+		offset += len(videos)
+		videos = nil
+	}
+}
+
+func addPic(videos []*VideoN)  {
+	noPicVideos := make([]*VideoN, 0)
+	for _, video := range videos {
+		if video.VideoTitle == "" {
+			video.VideoTitle = "搞笑视频"
+		}
+		if video.PicFileName == ""{
+			video.PicFileName = "001.jpg"
+		}
+		noPicVideos = append(noPicVideos, video)
+	}
+
+	for _, nvideo := range noPicVideos {
+		DB.Save(nvideo)
+	}
+}
+

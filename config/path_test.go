@@ -7,5 +7,5 @@ import (
 )
 
 func Test_path(t *testing.T)  {
-	fmt.Println(runtime.GOOS)
+	fmt.Println("GOOS : " + runtime.GOOS)
 }

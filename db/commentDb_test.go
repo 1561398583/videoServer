@@ -3,6 +3,7 @@ package db
 import (
 	"fmt"
 	"math/rand"
+	"regexp"
 	"strconv"
 	"testing"
 	"time"
@@ -67,4 +68,53 @@ func TestDeleteComment(t *testing.T)  {
 	if r.Error != nil {
 		t.Error(r.Error)
 	}
+}
+
+func TestBadComments(t *testing.T) {
+	var commentNum int
+	DB.Raw("SELECT count(*) FROM comments").Scan(&commentNum)
+
+	fmt.Println(commentNum)
+
+	offset := 0
+	var comments []*Comment
+	for offset < commentNum {
+		// SELECT * FROM video_ns OFFSET offset LIMIT 10;
+		DB.Limit(100).Offset(offset).Find(&comments)
+
+		printBadComments(comments)
+
+		offset += len(comments)
+		comments = nil
+	}
+}
+
+func printBadComments(comments []*Comment)  {
+	for _, comment := range comments{
+		if b := match(comment.Comment); b {
+			println(comment.Comment)
+		}
+	}
+}
+
+//匹配 @xxx
+func match(s string)  bool{
+	r1, _ := regexp.MatchString("^@[\\s\\S\u4e00-\u9fa5]+$", s)
+	if r1 {
+		return true
+	}
+	r2, _ := regexp.MatchString("^[\\s\\S\u4e00-\u9fa5]*[<][\\s\\S]+[>][\\s\\S\u4e00-\u9fa5]*$", s)
+	if r2 {
+		return true
+	}
+
+	return false
+}
+
+func Test1(t *testing.T)  {
+	//s1 := "哈哈<a href='http://t.cn/A6UKWauG' data-hide=''>are you ok?"
+	//s2 := "@are you ok? '哈哈'"
+	s3 := "are you ok?@"
+	r := match(s3)
+	fmt.Println(r)
 }

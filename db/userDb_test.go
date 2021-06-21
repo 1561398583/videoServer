@@ -6,7 +6,7 @@ import (
 
 func TestDbUser(t *testing.T)  {
 	//now := time.Now().Format("2006_01_02_15_04_05")
-	userId := "123"
+	userId  := "123"
 	user := User{ID:userId, UserName: "test", FaceImage: "abc.jpg"}
 	err := CreateUser(&user)
 	if err != nil {
@@ -55,11 +55,17 @@ func TestDbUser(t *testing.T)  {
 //看没找到会返回什么error
 func TestNotFound(t *testing.T)  {
 	userId := "test_notFound"
-	user := User{}
-	tx := DB.First(&user, userId)
-
-	if tx.Error != nil {
-		t.Errorf("%v", tx.Error)
+	_, err := GetUserById(userId)
+	if err != nil {
+		t.Error(err)
 	}
 
+}
+
+func TestUpdateUser(t *testing.T) {
+	user := User{ID:"test1", UserName: "赵信", FaceImage: "test1.jpg"}
+	err := UpdateUser(&user)
+	if err != nil {
+		t.Error(err)
+	}
 }

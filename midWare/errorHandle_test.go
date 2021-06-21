@@ -3,6 +3,7 @@ package midWare
 import (
 	"errors"
 	"github.com/gin-gonic/gin"
+	"testing"
 )
 
 func InitErrorTest(r *gin.Engine)  {
@@ -16,4 +17,20 @@ func InitErrorTest(r *gin.Engine)  {
 		err := errors.New("get a error")
 		c.Error(err)
 	})
+}
+
+func TestErrHandler(t *testing.T)  {
+	r := gin.Default()
+	r.Use(ErrorHandler)
+	r.GET("/error", func(c *gin.Context) {
+		err1 := errors.New("get  error1")
+		err2 := errors.New("get  error2")
+		err3 := errors.New("get  error3")
+		c.Error(err1)
+		c.Error(err2)
+		c.Error(err3)
+		return
+	})
+
+	r.Run(":8080")
 }

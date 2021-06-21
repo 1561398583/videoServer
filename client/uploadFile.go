@@ -2,20 +2,27 @@ package client
 
 import (
 	"bytes"
+	"encoding/json"
+	"errors"
 	"fmt"
 	"io/ioutil"
 	"mime/multipart"
 	"net/http"
 	"os"
+	"yx.com/videos/creeper"
 )
 
-func UploadFile(url, localFilePath, serverFilePath string)  {
+func UploadFile(url, localFilePath, serverFilePath string)  error{
 	file, err := os.Open(localFilePath)
 	if err != nil {
-		fmt.Println("open " + localFilePath + " fail : " + err.Error())
-		return
+		return errors.New("open " + localFilePath + " fail : " + err.Error())
 	}
-	defer file.Close()
+	defer func() {
+		err := file.Close()
+		if err != nil {
+			fmt.Println("close file err : " + err.Error())
+		}
+	}()
 
 	data, err := ioutil.ReadAll(file)
 	if err != nil {
@@ -60,13 +67,77 @@ func UploadFile(url, localFilePath, serverFilePath string)  {
 
 	resp, err := http.DefaultClient.Do(req)
 	if err != nil {
-		fmt.Println("request error : " + err.Error())
-		return
+		return errors.New("request error : " + err.Error())
 	}
+	defer func() {
+		err := resp.Body.Close()
+		if err != nil {
+			fmt.Println("close resp.body err : " + err.Error())
+		}
+	}()
+
 	if resp.StatusCode != 200 {
-		fmt.Println(resp.Body)
-		return
+		creeper.ShowResponse(resp)
+		fmt.Println()
+		return errors.New("status is not 200")
 	}
 
-	fmt.Println("upload sucess")
+	return nil
+}
+
+func IsFileExist(url, filePath string) (bool, error) {
+	fp := fp{
+		FilePath: filePath,
+	}
+	data, err := json.Marshal(fp)
+	if err != nil {
+		return false, errors.New("IsFileExist json.Marshal error : "+err.Error())
+	}
+	request, err := http.NewRequest("POST", url, bytes.NewReader(data))
+	if err != nil {
+		return false, errors.New("IsFileExist http.NewRequest error : "+err.Error())
+	}
+	//post数据并接收http响应
+	resp,err :=http.DefaultClient.Do(request)
+	if err!=nil{
+		return false, errors.New("IsFileExist request error : "+err.Error())
+	}else {
+		defer func() {
+			err := resp.Body.Close()
+			if err != nil {
+				panic(err)
+			}
+		}()
+
+		respBody,err :=ioutil.ReadAll(resp.Body)
+		if err != nil {
+			return false, errors.New("IsFileExist read resp.body error : "+err.Error())
+		}
+
+		result := RespJ{}
+		err = json.Unmarshal(respBody, &result)
+		if err != nil {
+			return false, errors.New("IsFileExist json.Unmarshal error : "+err.Error())
+		}
+
+		if result.Status != "ok" {
+			return false, errors.New("IsFileExist error : "+result.ErrorMsg)
+		}
+
+		if result.Data == "true" {
+			return true, nil
+		}else {
+			return false, nil
+		}
+	}
+}
+
+type fp struct {
+	FilePath string
+}
+
+type RespJ struct {
+	Status string //ok; error
+	ErrorMsg string
+	Data string
 }
