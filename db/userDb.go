@@ -1,6 +1,7 @@
 package db
 
 import (
+	"errors"
 	"github.com/go-sql-driver/mysql"
 	"gorm.io/gorm"
 )
@@ -36,13 +37,25 @@ func GetUserById(id string)  (*User,error){
 		//fmt.Printf("%#v", tx.Error)	//查看error类型
 		//用户不存在
 		if tx.Error == gorm.ErrRecordNotFound {
-			return nil, NotFindErr
+			return nil, errors.New("user not find")
 		}
 
 		//未知错误
 		panic(tx.Error)
 	}
 	return &user, nil
+}
+
+func GetUsers(ids []string)  ([]*User,error){
+	var users []*User
+	tx := DB.Find(&users, ids)	// SELECT * FROM users WHERE id IN (1,2,3);
+
+	if tx.Error != nil {
+
+		//未知错误
+		panic(tx.Error)
+	}
+	return users, nil
 }
 
 

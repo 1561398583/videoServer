@@ -79,6 +79,15 @@ func DeleteLike(userId, videoId string)  error{
 	return nil
 }
 
+func GetUserLikeVideosInfo(userId string, offset int)  ([]*UserLikeVideo,error){
+	var ulvs []*UserLikeVideo
+	r := DB.Where("user_id = ?", userId, ).Limit(10).Offset(offset).Find(&ulvs)
+	if r.Error != nil {
+		return nil, r.Error
+	}
+	return ulvs, nil
+}
+
 
 
 type UserLikeVideo struct {

@@ -15,7 +15,7 @@ func TestAddAComment(t *testing.T) {
 		ID: "123",
 		CreatedAt: time.Now().Format("2006-01-02 15:04:05"),
 		VideoId: "video123",
-		UserId: int64(123),
+		UserId: "123",
 	}
 	err := AddAComment(&c)
 	if err != nil {
@@ -33,7 +33,7 @@ func TestAddComments(t *testing.T) {
 			ID: id,
 			CreatedAt: time.Now().Format("2006-01-02 15:04:05"),
 			VideoId: "video123",
-			UserId: int64(123),
+			UserId: "123",
 			LikeNum:likeNum,
 		}
 		err := AddAComment(&c)
@@ -46,7 +46,7 @@ func TestAddComments(t *testing.T) {
 }
 
 func TestFindComments(t *testing.T)  {
-	cs, err := GetCommentsByVideoId("video123", 0)
+	cs, err := GetLevel1CommentsByVideoId("video123", 0)
 	if err != nil {
 		t.Errorf("%#v", err)
 	}
@@ -54,7 +54,7 @@ func TestFindComments(t *testing.T)  {
 		fmt.Printf("id : %s, likeNum :%d \n",c.ID, c.LikeNum)
 	}
 	fmt.Printf("========================================\n")
-	cs, err = GetCommentsByVideoId("video123", 1)
+	cs, err = GetLevel1CommentsByVideoId("video123", 1)
 	if err != nil {
 		t.Errorf("%#v", err)
 	}

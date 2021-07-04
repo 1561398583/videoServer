@@ -1,6 +1,7 @@
 package db
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -67,5 +68,21 @@ func TestUpdateUser(t *testing.T) {
 	err := UpdateUser(&user)
 	if err != nil {
 		t.Error(err)
+	}
+}
+
+func TestGetUsers(t *testing.T) {
+	ids := []string{
+		"1006075324a",
+		"1009593475",
+		"1015841314",
+	}
+	us, err := GetUsers(ids)
+	if err != nil {
+		t.Error(err)
+	}
+
+	for _, u := range us{
+		fmt.Println(u.UserName)
 	}
 }

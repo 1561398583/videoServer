@@ -13,6 +13,7 @@ var (
 	VIDEO_PIC_DIR string    //video封面图
 	REQUEST_MAX_NUM int = 1000
 	HOST = "https://www.xiaoyxiao.cn"
+	DEFAULT_USER_FACE_IMG = ""	//user默认头像
 )
 
 func InitConfig()  {
@@ -28,5 +29,5 @@ func InitConfig()  {
 	VIDEO_PIC_DIR = ASSETS_DIR + "/videoPic"
 	VIDEO_DIR = ASSETS_DIR + "/videos"
 	FACE_IMAGE_DIR = ASSETS_DIR + "/faceImg"
-
+	DEFAULT_USER_FACE_IMG = FACE_IMAGE_DIR + "/001.jpg"
 }

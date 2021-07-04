@@ -3,7 +3,6 @@ package api
 import (
 	"encoding/json"
 	"errors"
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"io/ioutil"
 	"net/http"
@@ -27,7 +26,7 @@ func Login(c *gin.Context)  {
 	code := c.Query("code")
 	NickName := c.Query("NickName")
 	FaceImgUrl := c.Query("FaceImgUrl")
-	fmt.Println("code : " + code)
+	//fmt.Println("code : " + code)
 
 	result := LoginResult{}
 

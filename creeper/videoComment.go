@@ -45,12 +45,13 @@ func commnets2DbComments(cs []*Comment, videoId string)  error{
 		if c.Id != c.RootId {
 			level = 2
 		}
+		uid := strconv.FormatInt(c.User.Id, 10)
 		dbc := db.Comment{
 			ID:              c.Id,
 			CreatedAt:       createT,
 			VideoId:         videoId,
 			Comment:         c.Text,
-			UserId:          c.User.Id,
+			UserId:          uid,
 			ToUserId:        "",
 			ChildNum:        c.TotalNumber,
 			LikeNum:         c.LikeCount,

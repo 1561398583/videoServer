@@ -46,6 +46,19 @@ func GetVideoNById(id string) (*VideoN, error) {
 	return &video, nil
 }
 
+
+func GetVideoNByIds(ids []string) ([]*VideoN, error) {
+	var videos []*VideoN
+	r := DB.Where("id IN ?", ids).Find(&videos)
+	if r.Error != nil {
+		//未知错误
+		panic(r.Error)
+	}
+	return videos, nil
+}
+
+
+
 //返回从sinceId开始的num个video
 func GetVideoNsBySinceId(sinceId string, num int) ([]*VideoN, error) {
 	var videos []*VideoN
@@ -69,6 +82,8 @@ func GetVideoNsBySinceId(sinceId string, num int) ([]*VideoN, error) {
 
 	return videos, nil
 }
+
+
 
 
 //Id上一个video
