@@ -1,6 +1,7 @@
 package client
 
 import (
+	"context"
 	"fmt"
 	"testing"
 	"time"
@@ -31,4 +32,5 @@ func TestModfiyComments(t *testing.T) {
 	spendTime := time.Since(start)
 	fmt.Println("all finish spend time : " + spendTime.String())
 
+	context.WithCancel()
 }

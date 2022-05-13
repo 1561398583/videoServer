@@ -14,6 +14,7 @@ var (
 	REQUEST_MAX_NUM int = 1000
 	HOST = "https://www.xiaoyxiao.cn"
 	DEFAULT_USER_FACE_IMG = ""	//user默认头像
+	TLS_DIR = ""
 )
 
 func InitConfig()  {
@@ -23,6 +24,7 @@ func InitConfig()  {
 		basePath = "E:/videoProject/server"
 		HOST = "http://localhost:8080"
 	}
+	TLS_DIR = basePath + "/tls"
 	LOG_DIR = basePath + "/logs"
 	HTML_DIR = basePath + "/html"
 	ASSETS_DIR = basePath + "/assets"

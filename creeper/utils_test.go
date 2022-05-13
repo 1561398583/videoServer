@@ -1,6 +1,7 @@
 package creeper
 
 import (
+	"context"
 	"fmt"
 	"net/url"
 	"testing"
@@ -108,6 +109,12 @@ func TestUrlEncode(t *testing.T)  {
 	}
 
 	fmt.Println(s)
+
+
+}
+
+func TestContext(t *testing.T) {
+	context.WithCancel(context.Background())
 }
 
 

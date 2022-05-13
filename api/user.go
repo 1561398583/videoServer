@@ -57,6 +57,11 @@ func Login(c *gin.Context)  {
 		result.OpenId = openId
 	}
 
+	//构建session
+	if _, ok := session[openId]; !ok {
+		session[openId] = &SeesionInfo{SinceVideoId: "0"}
+	}
+
 	c.JSON(http.StatusOK, result)
 }
 

@@ -9,17 +9,17 @@ import (
 )
 
 func GetVideos(c *gin.Context){
-	sinceVideoId := c.Query("sinceVideoId")
 	userId := c.Query("uid")
-	numStr := c.Query("num")
-	num, err := strconv.ParseInt(numStr, 10, 64)
-	if err != nil {
-		if e := c.Error(errors.New("num param is error")); e != nil {
-			panic(e)
-		}
-		return
+	sinceVideoId := "0"
+	if ses, ok := session[userId];ok{
+		sinceVideoId = ses.SinceVideoId
+	}else {
+		session[userId] = &SeesionInfo{SinceVideoId: "0"}
 	}
-	videos, err := db.GetVideoNsBySinceId(sinceVideoId, int(num))
+
+
+	//获取5个，从sinceVideoId开始
+	videos, err := db.GetVideoNsBySinceId(sinceVideoId, 5)
 
 	if err != nil {
 		if e := c.Error(err); e != nil {
@@ -27,6 +27,9 @@ func GetVideos(c *gin.Context){
 		}
 		return
 	}
+
+	lastVideoId := videos[len(videos) - 1].ID
+	session[userId].SinceVideoId = lastVideoId
 
 	//转换struct
 	clientVideos := make([]*VideoInfo2Client, len(videos))

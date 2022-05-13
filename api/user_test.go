@@ -13,4 +13,5 @@ func TestGetOpenId(t *testing.T)  {
 	}
 	//oEn2F4k7H8npoA2LjydjhCE7UUsY
 	fmt.Println("get openId : " + id)
+
 }

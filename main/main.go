@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"net/http/pprof"
 	"os"
+	"runtime"
 	"time"
 	"yx.com/videos/api"
 	"yx.com/videos/config"
@@ -79,8 +80,14 @@ func main()  {
 	//注册handlers
 	api.RegistApi(r)
 
+	goos := runtime.GOOS
+	if goos == "windows" {
+		r.Run() // listen and serve on 0.0.0.0:8080 (for windowsConst "localhost:8080")
+	}else {	//linux
+		r.RunTLS(":443", config.TLS_DIR + "/xiaoyxiao.cn.pem", config.TLS_DIR + "/xiaoyxiao.cn.key")
+	}
 
-	r.Run() // listen and serve on 0.0.0.0:8080 (for windowsConst "localhost:8080")
+
 
 	/*
 	fmt.Println("start server 2021.6.14 15:34")

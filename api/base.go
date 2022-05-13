@@ -44,3 +44,9 @@ type RespStruct struct {
 	Data interface{}
 }
 
+var session = make(map[string]*SeesionInfo)
+
+type SeesionInfo struct {
+	SinceVideoId string
+}
+
